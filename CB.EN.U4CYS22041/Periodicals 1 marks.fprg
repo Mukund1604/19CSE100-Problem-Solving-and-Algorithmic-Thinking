@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Midhru Jayan.K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-30 04:02:14 PM"/>
+        <attribute name="created" value="TWlkaHJ1IEpheWFuLks7TEFQVE9QLVJENDRIRkxVOzIwMjItMTAtMzA7MDI6NTE6MDkgUE07MzYwNg=="/>
+        <attribute name="edited" value="TWlkaHJ1IEpheWFuLks7TEFQVE9QLVJENDRIRkxVOzIwMjItMTAtMzA7MDI6NTE6MTIgUE07MTtNaWRocnUgSmF5YW4uSztMQVBUT1AtUkQ0NEhGTFU7MjAyMi0xMC0yODswOToyMDo1NiBBTTtzdHVkZW50cy5mcHJnOzg3OTY="/>
+        <attribute name="edited" value="TWlkaHJ1IEpheWFuLks7TEFQVE9QLVJENDRIRkxVOzIwMjItMTAtMzA7MDI6NTM6NDIgUE07MzszNzE1"/>
+        <attribute name="edited" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjItMTAtMzA7MDQ6MDI6MTQgUE07NTs0MTAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="t, g, h, j" type="Integer" array="False" size=""/>
+            <declare name="u, o, p" type="String" array="False" size=""/>
+            <output expression="&quot;enter periodicals&quot;" newline="True"/>
+            <input variable="t"/>
+            <output expression="&quot;subject 1&quot;" newline="True"/>
+            <input variable="u"/>
+            <output expression="&quot;sub1mark&quot;" newline="True"/>
+            <input variable="g"/>
+            <output expression="&quot;subject 2&quot;" newline="True"/>
+            <input variable="o"/>
+            <output expression="&quot;sub2mark&quot;" newline="True"/>
+            <input variable="h"/>
+            <output expression="&quot;subject3&quot;" newline="True"/>
+            <input variable="p"/>
+            <output expression="&quot;mark&quot;" newline="True"/>
+            <input variable="j"/>
+            <output expression="&quot;total&quot; &amp;(g+h+j)" newline="True"/>
+            <output expression="&quot;average:&quot; &amp;(g+h+j)/3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
