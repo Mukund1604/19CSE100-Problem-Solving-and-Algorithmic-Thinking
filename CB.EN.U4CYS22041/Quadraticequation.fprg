@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22041"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:07:44 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0MTsyMDIyMjNNQVlDMDA3ODsyMDIyLTExLTA0OzA5OjM4OjA5IEFNOzMwNzE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0MTsyMDIyMjNNQVlDMDA3ODsyMDIyLTExLTA0OzExOjA3OjQ0IEFNOzI7MzE2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Real" array="False" size=""/>
+            <output expression="&quot;ENTER THE VALUE OF A&quot;" newline="True"/>
+            <input variable="A"/>
+            <declare name="B" type="Real" array="False" size=""/>
+            <output expression="&quot;ENTER THE VALUE OF B&quot;" newline="True"/>
+            <input variable="B"/>
+            <declare name="C" type="Real" array="False" size=""/>
+            <output expression="&quot;ENTER THE VALUE OF C&quot;" newline="True"/>
+            <input variable="C"/>
+            <comment text="calculating root1"/>
+            <declare name="root1" type="Real" array="False" size=""/>
+            <assign variable="root1" expression="(-b+sqrt(b*b-4*a*c))/(2*a)"/>
+            <comment text="calculating root2"/>
+            <declare name="root2" type="Real" array="False" size=""/>
+            <assign variable="root2" expression="(-b-sqrt(b*b-4*a*c))/(2*a)"/>
+            <output expression="&quot;The roots of the equation are&quot;&amp;root1&amp;&quot;and&quot;&amp;root2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
