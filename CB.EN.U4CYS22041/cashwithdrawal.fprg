@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22041"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:27:15 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0MTsyMDIyMjNNQVlDMDA3ODsyMDIyLTExLTE4OzA5OjAwOjUwIEFNOzMwNjE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0MTsyMDIyMjNNQVlDMDA3ODsyMDIyLTExLTE4OzEwOjI3OjE1IEFNOzE7MzE3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;enter your name&quot;" newline="True"/>
+            <input variable="name"/>
+            <declare name="accntno, pin, amnt" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter your accntno&quot;" newline="True"/>
+            <input variable="accntno"/>
+            <if expression="accntno=12345">
+                <then>
+                    <output expression="&quot;enter the pin&quot;" newline="True"/>
+                    <input variable="pin"/>
+                    <if expression="pin==4479">
+                        <then>
+                            <output expression="&quot;enter the cash to be withdrawn&quot;" newline="True"/>
+                            <input variable="amnt"/>
+                            <if expression="amnt&lt;=4000">
+                                <then>
+                                    <output expression="&quot;cash can be withdrawn from the acnt&quot;" newline="True"/>
+                                    <output expression="&quot;cash withdrawn&quot;" newline="True"/>
+                                    <output expression="&quot;bank balance=3000&quot;" newline="True"/>
+                                    <output expression="&quot;thank you for using our bank&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;cash cannot be withdrawn from the accnt due to insufficient min balance&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;sorry,the pin you have entered is incorrect&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;cash cannot be withdrawn since the acnt no is wrong&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

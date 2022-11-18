@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22041"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:01:25 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0MTsyMDIyMjNNQVlDMDA3ODsyMDIyLTExLTE4OzA5OjAwOjUwIEFNOzMwNjE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0MTsyMDIyMjNNQVlDMDA3ODsyMDIyLTExLTE4OzExOjAxOjI1IEFNOzI7MzE2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;enter your name&quot;" newline="True"/>
+            <input variable="name"/>
+            <declare name="accntno, pin, amnt, opt" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter your accntno&quot;" newline="True"/>
+            <input variable="accntno"/>
+            <output expression="&quot;how can we help you&quot;&amp;name&amp;&quot;?&quot;" newline="True"/>
+            <output expression="&quot;to check balance enter 1&quot;" newline="True"/>
+            <output expression="&quot;to withdraw money enter 3&quot;" newline="True"/>
+            <output expression="&quot;to deposit money enter 5&quot;" newline="True"/>
+            <output expression="&quot;to change pin enter 7&quot;" newline="True"/>
+            <input variable="opt"/>
+            <if expression="opt=3">
+                <then>
+                    <if expression="accntno=12345">
+                        <then>
+                            <output expression="&quot;enter the pin&quot;" newline="True"/>
+                            <input variable="pin"/>
+                            <if expression="pin==4479">
+                                <then>
+                                    <output expression="&quot;enter the cash to be withdrawn&quot;" newline="True"/>
+                                    <input variable="amnt"/>
+                                    <if expression="amnt&lt;=4000">
+                                        <then>
+                                            <output expression="&quot;cash can be withdrawn from the acnt&quot;" newline="True"/>
+                                            <output expression="&quot;cash withdrawn&quot;" newline="True"/>
+                                            <output expression="&quot;bank balance=3000&quot;" newline="True"/>
+                                            <output expression="&quot;thank you for using our bank&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;cash cannot be withdrawn from the accnt due to insufficient min balance&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;sorry,the pin you have entered is incorrect&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;cash cannot be withdrawn since the acnt no is wrong&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="opt=1">
+                        <then>
+                            <output expression="&quot;the balance for the accnt number is 1000&quot;" newline="True"/>
+                            <output expression="&quot;thank you for using the bank&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;balance cannot be viewed&quot;" newline="True"/>
+                            <if expression="opt=5">
+                                <then>
+                                    <output expression="&quot;enter the money to be deposited&quot;" newline="True"/>
+                                    <input variable="amnt"/>
+                                    <output expression="3000+amnt" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;money cannot be deposited&quot;" newline="True"/>
+                                    <if expression="opt=7">
+                                        <then>
+                                            <output expression="&quot;enter the current pin&quot;" newline="True"/>
+                                            <input variable="pin"/>
+                                            <output expression="&quot;new pin=3333&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;pin cannot be changed&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
