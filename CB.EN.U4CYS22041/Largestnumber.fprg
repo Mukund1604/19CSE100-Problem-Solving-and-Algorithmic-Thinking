@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mukund Kumarappan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-06 08:08:06 AM"/>
+        <attribute name="created" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDg6MDc6MzkgQU07Mzk5NA=="/>
+        <attribute name="edited" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDg6MDc6NDUgQU07MTtwY2hlbTtIRU1BREhSSTsyMDIyLTEyLTA5OzA5OjQ0OjQzIEFNO2xhcmdlc3RfbnVtYmVyWzYyXS5mcHJnOzg4NTQ="/>
+        <attribute name="edited" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDg6MDg6MDYgQU07MTs0MDk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numbers" type="Integer" array="True" size="5"/>
+            <declare name="number, i, v" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Enter the values &amp;i&amp;  = &quot;" newline="True"/>
+                <input variable="number"/>
+                <assign variable="numbers[i]" expression="number"/>
+            </for>
+            <assign variable="v" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="v&lt;numbers[i]">
+                    <then>
+                        <assign variable="v" expression="numbers[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="v" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
