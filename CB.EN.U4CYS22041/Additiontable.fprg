@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mukund Kumarappan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-06 06:59:33 AM"/>
+        <attribute name="created" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDY6NTg6MjIgQU07Mzk5MA=="/>
+        <attribute name="edited" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDY6NTg6MjUgQU07MTtjYi5lbi51NGN5czIyMDU1OzIwMjIyM01BWUMwMDkyOzIwMjItMTItMDI7MDg6NTQ6NTIgQU07QWRkaXRpb24gdGFibGVbNjddLmZwcmc7OTY3NQ=="/>
+        <attribute name="edited" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDY6NTk6MzMgQU07MTs0MTAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="CREATING A PROGRAMME WHERE THE ADDITION TABLES OF THE NUMBERS 1 TO 10 IS DISPLAYED TO USER"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <comment text="WHEN I=1 J TAKES ALL VALUES FROM 1 TO 10 AND SUM IS DISPLAYED . SIMILARLY FOR EVERY VALUE I TAKES J TAKES ALL VALUES FROM 1 TO 10 AND SUM IS DISPLAYED"/>
+                <output expression="&quot;the addition table of &quot; &amp;i&amp; &quot; is&quot;" newline="True"/>
+                <for variable="j" start="1" end="10" direction="inc" step="1">
+                    <output expression="i&amp; &quot;+&quot; &amp;j&amp; &quot;=&quot; &amp;i+j" newline="True"/>
+                    <comment text="DISPLAYING SUM OF I WITH J(WHICH TAKES VALUE OF 1 TO 10 FOR EVERY VALUE I TAKES)"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

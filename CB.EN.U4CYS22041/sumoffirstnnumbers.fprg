@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mukund Kumarappan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-06 06:56:38 AM"/>
+        <attribute name="created" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDY6NTQ6MDYgQU07Mzk4OA=="/>
+        <attribute name="edited" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDY6NTU6MTEgQU07MztjYi5lbi51NGN5czIyMDU1OzIwMjIyM01BWUMwMDkyOzIwMjItMTItMDI7MDg6NTQ6NTIgQU07c3Vtb2ZmaXJzdG5udW1iZXJzWzY1XS5mcHJnOzEwMjgz"/>
+        <attribute name="edited" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDY6NTY6MzggQU07MTs0MTAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="CREATING A PROGRAMME THAT GETS THE VALUE OF N FROM USER AND CALCULATES SUM OF FIRST N NATURAL NUMBERS"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number upto which you want to find out the sum.&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="GETTING VALUE OF N FROM USER"/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=n">
+                <assign variable="sum" expression="sum+i"/>
+                <assign variable="i" expression="i+1"/>
+                <comment text="ADDING I TO SUM AND INCREMENTING I BY 1 IN EVERY ITERATION OF LOOP SO THAT WE GET SUM OF FIRST N NATURAL NUMBERS"/>
+            </while>
+            <output expression="&quot;the sum of the first &quot; &amp;n&amp; &quot; natural numbers is &quot; &amp;sum" newline="True"/>
+            <comment text="DISPLAYING SUM TO USER"/>
+        </body>
+    </function>
+</flowgorithm>
