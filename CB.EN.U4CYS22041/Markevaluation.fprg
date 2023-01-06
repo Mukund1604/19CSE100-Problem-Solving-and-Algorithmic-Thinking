@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mukund Kumarappan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-06 08:05:58 AM"/>
+        <attribute name="created" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDg6MDU6MjIgQU07Mzk4NA=="/>
+        <attribute name="edited" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDg6MDU6MjYgQU07MTtwY2hlbTtIRU1BREhSSTsyMDIyLTEyLTA5OzA5OjIyOjMwIEFNO21hcmtfZXZhbHVhdGlvbls2MF0uZnByZzs4OTQ1"/>
+        <attribute name="edited" value="TXVrdW5kIEt1bWFyYXBwYW47TEFQVE9QLTU5RTMwRlRTOzIwMjMtMDEtMDY7MDg6MDU6NTggQU07MTs0MTAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="student, n, i, i1" type="Integer" array="False" size=""/>
+            <declare name="total, rollno, mark, average" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of n for number of students : &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="students" type="Integer" array="True" size="n"/>
+            <declare name="marks" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter your roll no : &quot;" newline="True"/>
+                <input variable="rollno"/>
+                <for variable="i1" start="0" end="4" direction="inc" step="1">
+                    <output expression="&quot;Enter the marks : &quot;&amp;i&amp;&quot; = &quot;" newline="True"/>
+                    <input variable="mark"/>
+                    <assign variable="marks[i1]" expression="mark"/>
+                </for>
+                <assign variable="total" expression="marks[0]+marks[1]+marks[2]+marks[3]+marks[4]"/>
+                <assign variable="average" expression="total/5"/>
+                <output expression="&quot;Total = &quot; &amp;total" newline="True"/>
+                <output expression="&quot;Average = &quot;&amp;average" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
